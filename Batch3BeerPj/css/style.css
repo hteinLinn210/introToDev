@@ -49,13 +49,12 @@
 }
 
 .background {
-  background-color: black;
-  /* background-image: url(../images/); */
+  background-image: url(../images/background.jpg);
   height: 650px;
 }
 
 .beerbar {
-  margin-left: 400px;
+  margin-left: 300px;
   margin-top: 220px;
   color: gold;
   font-family: great_vibe;
