@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selector</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: gray">
+    <form action="">
+      <h1>Student Register</h1>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="enter your name" />
+      <br />
+      <br />
+      <label for="Fname">Father Name</label>
+      <input
+        type="text"
+        name="Fname"
+        id="Fname"
+        placeholder="enter your father name"
+      />
+      <br />
+      <br />
+      <label for="phone">Phone</label>
+      <input
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="enter your phone number"
+      />
+      <br />
+      <br />
+
+      <label for="bd">Date of Birth</label>
+      <div id="dob_select">
+        <select>
+          <option value="">Day</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+        </select>
+        <select>
+          <option value="">Month</option>
+          <option value="">January</option>
+          <option value="">February</option>
+          <option value="">March</option>
+          <option value="">Apri</option>
+          <option value="">May</option>
+        </select>
+        <select>
+          <option value="">Year</option>
+          <option value="">1997</option>
+          <option value="">1998</option>
+          <option value="">1999</option>
+          <option value="">2000</option>
+          <option value="">2001</option>
+        </select>
+      </div>
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="enter your email"
+      />
+      <br /><br />
+
+      <label for="gender">Gender</label> <br />
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="not_to_say" />
+      <label for="not_to_say">Prefer Not to Say</label> <br /><br />
+
+      <label for="address">Address</label>
+      <textarea name="" id="address" cols="30" rows="2"></textarea> <br /><br />
+
+      <label for="education">Qualification</label>
+      <div>
+        <input type="checkbox" name="high_school" id="high_school" />
+        <label for="high_school">High School(10th)</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="higher_school"
+          id="higher_school"
+          disabled
+        />
+        <label for="higher_school">Higher School(12th)</label>
+      </div>
+      <div>
+        <input type="checkbox" name="bachelor" id="bachelor" />
+        <label for="bachelor">Graduation(Bachelors)</label>
+      </div>
+      <div>
+        <input type="checkbox" name="master" id="master" />
+        <label for="master">Pre Graduation(Master)</label>
+      </div>
+      <br /><br />
+
+      <fieldset class="fieldset">
+        <legend>Rules</legend>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nam id,
+          iure nostrum excepturi autem rerum, nulla voluptatem error maiores
+          consectetur. Nobis et sed consequuntur id omnis labore dolor
+          blanditiis.
+        </p>
+        <ul>
+          <li>This is first rules!</li>
+          <li>This is second rules!</li>
+          <li>This is third rules!</li>
+          <li>This is fourth rules!</li>
+          <li>This is fifth rules!</li>
+          <li>This is sixth rules!</li>
+          <li>This is seventh rules!</li>
+        </ul>
+      </fieldset>
+      <br /><br />
+      <p></p>
+      <p class="thankyou">Thank you!</p>
+      <p></p>
+    </form>
+  </body>
+</html>

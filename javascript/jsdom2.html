@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+
+  <body>
+    <h3>JS DOM 2</h3>
+    <img id="myImg" src="logo1.png" alt="" width="200" height="200" />
+    <script>
+      let myImg = document.getElementById("myImg");
+
+      myImg.onmouseover = big;
+      myImg.onmouseout = normal;
+
+      function big() {
+        myImg.width = "400";
+        myImg.height = "400";
+        // console.log(myImg.src);
+        // console.log(myImg.getAttribute("src"));
+        // myImg.src = "logo2.png";
+      }
+
+      function normal() {
+        myImg.width = "200";
+        myImg.height = "200";
+        changeImg();
+      }
+
+      function changeImg() {
+        let src = myImg.getAttribute("src");
+        if (src === "logo1.png") {
+          myImg.src = "logo2.png";
+        } else if (src === "logo2.png") {
+          myImg.src = "logo3.png";
+        } else {
+          myImg.src = "logo1.png";
+        }
+      }
+    </script>
+  </body>
+</html>

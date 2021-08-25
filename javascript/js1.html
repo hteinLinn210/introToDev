@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Variables</title>
+  </head>
+  <body>
+    <h3>JS Variables</h3>
+    <script>
+      // 1) String Data Types
+      var firstName = "Htein";
+      console.log(typeof firstName);
+      console.log(firstName);
+      var lastName = " Linn";
+      console.log(firstName, lastName);
+      var fullName = firstName + lastName;
+      console.log(fullName);
+
+      //   2) Number Data Type
+      var age = 35;
+      var height = 5.6;
+      console.log(typeof age);
+      console.log(age, height);
+
+      //   3) Boolean Data Type
+      var single = true;
+      var passed = false;
+      console.log(typeof single);
+      console.log(single, passed);
+
+      //   4) Array Data Type
+      var nameList = ["Mg Mg", "Ag Ag", "Ko Ko", 26, 2.6, true];
+      console.log(nameList[0]);
+      console.log(nameList[1]);
+      console.log(nameList[2]);
+      console.log(nameList);
+      console.log(nameList.pop());
+      console.log(nameList);
+      console.log(nameList.pop());
+      console.log(nameList);
+      console.log(nameList.pop());
+      console.log(nameList);
+      console.log(nameList.pop());
+      console.log(nameList);
+
+      nameList.push("Ma Ma");
+      nameList.push("Aye Aye");
+      console.log(nameList);
+      nameList.push("John");
+      nameList.push("Nicole");
+      console.log(nameList);
+
+      console.log(nameList.shift());
+      console.log(nameList);
+
+      nameList.splice(3, 1);
+      console.log(nameList);
+
+      //   5) Object Data Type
+      var studentObj = {
+        name: "Mg Mg",
+        age: 23,
+        city: "Yangon",
+        hobbies: ["php", "js", "html"],
+      };
+      console.log(studentObj);
+      console.log(studentObj.name);
+      console.log(studentObj.age);
+      console.log(studentObj.city);
+      console.log(studentObj.hobbies);
+    </script>
+  </body>
+</html>

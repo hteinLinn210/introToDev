@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS calculator</title>
+  </head>
+  <body>
+    <h3>JS calculator</h3>
+    <label for="firstNumber">First Number</label> <br />
+    <input type="number" id="firstNumber" /> <br />
+    <label for="secondNumber">Second Number</label> <br />
+    <input type="number" id="secondNumber" /> <br />
+    <button onclick="calculate()">Sum</button> <br />
+    <label for="sum">Sum:</label> <br />
+    <input type="number" name="" id="sum" /> <br />
+
+    <script>
+      function calculate() {
+        let firstNumber = parseFloat(
+          document.getElementById("firstNumber").value
+        );
+        let secondNumber = parseFloat(
+          document.getElementById("secondNumber").value
+        );
+        // console.log(firstNumber, secondNumber);
+        let sum = firstNumber + secondNumber;
+        document.getElementById("sum").value = sum;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Operations</title>
+  </head>
+  <body>
+    <h3>JS Operations2</h3>
+    <script>
+      // swap numbers
+      //   swap()
+      function swap() {
+        let firstNumber = parseInt(prompt("Enter First Number!"));
+        let secondNumber = parseInt(prompt("Enter Second Number!"));
+        let temp;
+        console.log(`Before Swap ${firstNumber} ${secondNumber}`);
+
+        temp = firstNumber;
+        firstNumber = secondNumber;
+        secondNumber = temp;
+        console.log(`After Swap ${firstNumber} ${secondNumber}`);
+      }
+
+      //   fahrenheit = celsius * 1.8 + 32
+      //   ctof();
+      function ctof() {
+        let celsius = parseFloat(prompt("Enter celsius Temperature"));
+        let fahrenheit = celsius * 1.8 + 32;
+        console.log(
+          `${celsius} Celsius Degree is ${fahrenheit} Fahrenheit Degree`
+        );
+      }
+
+      // 1km = 0.621371 miles
+      //   10km = 0.621371 miles
+      //   ktom();
+      function ktom() {
+        let kilometer = parseFloat(prompt("Enter kilometer"));
+        let factor = 0.621371;
+        let miles = kilometer * factor;
+        console.log(`${kilometer} km is ${miles.toFixed(1)} miles.`);
+      }
+
+      //   mt0k();
+      function mt0k() {
+        let miles = parseFloat(prompt("Enter miles"));
+        let factor = 0.621371;
+        let kilometer = miles / factor;
+        console.log(`${miles} miles is ${kilometer.toFixed(1)} km.`);
+      }
+    </script>
+  </body>
+</html>

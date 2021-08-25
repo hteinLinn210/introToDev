@@ -1,0 +1,340 @@
+h2 {
+  /* color: red; text */
+  /* color: #ff0000; hexa */
+  /* color: #f00; short hexa */
+  color: rgb(255, 0, 0); /*rgb*/
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+/* p {
+  text-indent: 50px;
+  line-height: 40px;
+} */
+
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* tag selector or element selector */
+h1 {
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* attribute selecor */
+a[target="_blank"] {
+  /* color: black; */
+  text-decoration: none;
+}
+
+/* id selector */
+#idselector {
+  color: green;
+  text-indent: 50px;
+}
+
+/* class selector */
+.classone {
+  color: red;
+  line-height: 40px;
+  word-spacing: 20px;
+}
+
+/* Descentent */
+.desc a {
+  color: red;
+}
+
+/* Child */
+.child > a {
+  color: green;
+}
+
+a:link {
+  color: red;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: brown;
+}
+
+div:target {
+  border: 1px solid red;
+  color: green;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  background-color: gray;
+  outline: none;
+  border: 2px solid #ccc;
+  height: 30px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  border: 3px solid #555;
+}
+
+div#dob_select {
+  width: 90%;
+  /* background-color: red; */
+}
+
+div#dob_select select {
+  width: 30%;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+
+#address {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="checkbox"]:enabled + label {
+  color: yellow;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: red;
+  font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label {
+  color: #fff;
+}
+
+.fieldset ul li {
+  margin-left: 50px;
+}
+
+li:first-child {
+  background-color: yellow;
+}
+
+li:last-child {
+  background-color: red;
+}
+
+li:nth-child(4) {
+  background-color: green;
+}
+
+p:empty {
+  width: 100%;
+  height: 20px;
+  background-color: #40fd40;
+}
+
+.thankyou {
+  text-align: center;
+}
+
+/* border */
+p.borderone {
+  border: 4px dashed red;
+}
+
+p.bordertwo {
+  border-bottom: 3px double yellow;
+}
+
+p.borderstyle {
+  border-style: dotted;
+}
+
+p.borderstylemix {
+  border-style: solid dotted double dashed;
+  /* T R B L */
+  border-style: solid dotted;
+  /* T/B and L/R */
+  border-style: solid dotted double;
+  /* T and L/R and B */
+  border-style: solid;
+}
+
+p.borderwidth {
+  border-width: 2px 7px;
+  border-style: solid;
+}
+
+/* Margin Lessons */
+.marginOne {
+  border: 1px solid red;
+  margin: 15px;
+}
+
+.marginTwo {
+  border: 1px solid black;
+  margin: 10px 20px;
+}
+
+.marginThree {
+  border: 1px solid yellow;
+  margin: 15px 20px 10px;
+}
+
+.marginFour {
+  border: 1px solid green;
+  /* margin: 50px 20px 20px 70px; */
+
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+/* Padding */
+.padding {
+  border: 1px solid red;
+  padding: 30px 20px 50px 70px;
+}
+
+/* Inline Block */
+.inline {
+  border: 1px solid red;
+  width: 40%;
+  display: inline-block;
+}
+
+.block {
+  border: 1px solid red;
+  display: inline-block;
+  width: 40%;
+}
+
+/* Float */
+.float_left img {
+  width: 40%;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.float_right img {
+  width: 40%;
+  float: right;
+}
+
+/* Grid Lessons */
+div.gridOne div,
+div.gridTwo div,
+div.gridThree div,
+div.gridFour div,
+div.gridFive div,
+div.gridSix div {
+  padding: 20px;
+  text-align: center;
+}
+
+div.gridOne,
+div.gridTwo,
+div.gridThree,
+div.gridFour,
+div.gridFive,
+div.gridSix {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.gridTwo {
+  grid-column-gap: 50px;
+}
+
+.gridThree {
+  grid-row-gap: 40px;
+}
+
+.gridFour {
+  grid-gap: 40px;
+}
+
+.One {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.Two {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.parent_relative {
+  position: relative;
+  border: 1px solid black;
+  width: 1000px;
+  height: 500px;
+}
+
+.relative {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.parent_absolute {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.absolute {
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  border: 1px solid red;
+  top: 40px;
+  left: 80px;
+}
+
+.fixed {
+  position: fixed;
+  top: 100px;
+  left: 600px;
+}
+
+.online_font {
+  font-family: "Rampart One", cursive;
+}
+
+@font-face {
+  font-family: offline;
+  src: url(../Alumni_Sans/AlumniSans-Italic-VariableFont_wght.ttf);
+}
+
+.offline_font {
+  font-family: offline;
+}

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: great_vibe;
+  src: url(../Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+.logo {
+  width: 180px;
+  height: 70px;
+  display: block;
+  margin-left: 30px;
+}
+
+.nav_background {
+  background-color: #16191c;
+}
+
+.brand_name {
+  margin-left: 50px;
+  font-family: great_vibe;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_brand {
+  display: inline-block;
+}
+
+.nav_background ul {
+  float: right;
+}
+
+.nav_background ul li {
+  display: inline-block;
+  margin-right: 40px;
+  padding-top: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav_background ul li:hover {
+  color: gold;
+  transform: translate(4px, -5px);
+  transition-duration: 0.4s;
+}
+
+.background {
+  background-color: black;
+  /* background-image: url(../images/); */
+  height: 650px;
+}
+
+.beerbar {
+  margin-left: 400px;
+  margin-top: 220px;
+  color: gold;
+  font-family: great_vibe;
+  font-size: 50px;
+}
+
+.readmore {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid gold;
+}

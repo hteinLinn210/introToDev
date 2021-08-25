@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Operations</title>
+  </head>
+  <body>
+    <h3>JS Operations</h3>
+    <script>
+      // get user inputs
+      //   asign two numbers to firstNumber and secondNumber
+      let firstNumber = parseFloat(prompt("Enter your first number!"));
+      let secondNumber = parseFloat(prompt("Enter your second number!"));
+      console.log(firstNumber, secondNumber);
+
+      // calculate
+      let sum = firstNumber + secondNumber;
+      let sub = firstNumber - secondNumber;
+      let mul = firstNumber * secondNumber;
+      let div = firstNumber / secondNumber;
+      let mod = firstNumber % secondNumber;
+      // show results
+      console.log(`
+        Sum: ${sum}
+        Sub: ${sub}
+        Mul: ${mul}
+        Div: ${div.toFixed(2)}
+        Mod: ${mod}
+      `);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Clock</title>
+  </head>
+  <body>
+    <h3>JS Clock</h3>
+    <label for="" id="clock"></label> <br />
+
+    <button id="btnStart">Start Time</button>
+    <button id="btnStop">Stop Time</button>
+    <br />
+    <button id="btnSet">Set Time Out</button>
+    <button id="btnUnset">Clear Time Out</button>
+
+    <script>
+      let myVar;
+
+      let btnSet = document.getElementById("btnSet");
+      let btnUnset = document.getElementById("btnUnset");
+
+      btnSet.onclick = setTime;
+      btnUnset.onclick = unsetTime;
+
+      function unsetTime() {
+        clearTimeout(myVar);
+      }
+
+      function setTime() {
+        myVar = setTimeout(showTime, 5000);
+      }
+
+      let btnStart = document.getElementById("btnStart");
+      let btnStop = document.getElementById("btnStop");
+
+      btnStart.onclick = start;
+      btnStop.onclick = stop;
+
+      function stop() {
+        clearInterval(myVar);
+      }
+
+      function start() {
+        myVar = setInterval(showTime, 1000);
+      }
+
+      function showTime() {
+        let now = new Date();
+        let time = now.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+      }
+    </script>
+  </body>
+</html>

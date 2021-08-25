@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Operators</title>
+  </head>
+  <body>
+    <h3>JS Operators</h3>
+    <script>
+      //   Unary Operator => works only with one variables
+      //   ++ -- !
+      //   ++ increasement
+      // -- decreasement
+      // ! negation (true => false / false => true)
+      var myNumber = 3;
+      console.log(myNumber++); // increase after operation
+      console.log(myNumber);
+
+      console.log(++myNumber); // increase before operation
+
+      console.log(myNumber--); // decrease after operation
+      console.log(myNumber);
+
+      console.log(--myNumber); // decrease before operation
+
+      var single = true;
+      console.log(!single);
+
+      //   Binary operators => works with 2 variables
+      // + - * / %(modulas)**
+      var firstNumber = 12;
+      var lastNumber = 5;
+      var sum = firstNumber + lastNumber;
+      var sub = firstNumber - lastNumber;
+      var mul = firstNumber * lastNumber;
+      var div = firstNumber / lastNumber;
+      var mod = firstNumber % lastNumber;
+      var power = firstNumber ** lastNumber;
+      console.log(firstNumber, lastNumber);
+      console.log(sum, sub, mul, div, mod, power);
+
+      //   Logical operator > < => <= == === != !== && ||
+
+      //   Ternary Operators => 3 variables
+      // ? :
+      var ans = 6 % 2 === 1 ? "ODD" : "EVEN";
+      console.log(ans);
+    </script>
+  </body>
+</html>

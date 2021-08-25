@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Loop</title>
+  </head>
+
+  <body>
+    <h3>JS Loop</h3>
+
+    <div>
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+    </div>
+
+    <script>
+      /*
+      // Switch case more than 3 conditions
+      function switchCase() {
+        let myNumber = parseInt(prompt("Enter between 1 and 6!"));
+        switch (myNumber) {
+          case 1:
+            console.log("One");
+            break;
+          case 2:
+            console.log("Two");
+            break;
+          case 3:
+            console.log("Three");
+            break;
+          case 4:
+            console.log("Four");
+            break;
+          case 5:
+            console.log("Five");
+            break;
+          case 6:
+            console.log("Six");
+            break;
+          default:
+            console.log("Out of Range!");
+            break;
+        }
+      }
+
+      //   loop
+      // for while dowhild
+      // for loop
+      for (let i = 1; i <= 10; i++) {
+        if (i == 6)
+          // break; // exit from current loop;
+          continue; // one time skip
+        document.write(`<h4>${i} Hello World</h4>`);
+      }
+
+      // sum of 1 to 100
+      let sumTotal = 0;
+      for (let i = 1; i <= 100; i++) {
+        // sumTotal = sumTotal + i;
+        sumTotal += i;
+      }
+      console.log(`Sum of 1 to 100 is ${sumTotal}`);
+
+      // Multiplication table
+      let factor = parseInt(prompt("Enter a number!"));
+      for (let i = 1; i <= 12; i++) {
+        document.write(`<br> ${factor} * ${i} = ${factor * i}`);
+      }
+
+      // nested loop
+      document.write("<br>");
+      for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      document.write("<table border = 1; cellpadding = 10>");
+      for (let i = 1; i <= 10; i++) {
+        document.write("<tr>");
+        for (let j = 1; j <= 10; j++) {
+          document.write(`<td>${i * j}</td>`);
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+
+      // while loop
+      // based on conditions
+      let mySecondNumber = 100;
+      while (mySecondNumber >= 30) {
+        document.write(`<br>${mySecondNumber}`);
+        mySecondNumber -= 4;
+      }
+      document.write(`<br> Exit from while loop at ${mySecondNumber}`);
+
+      let mySumTotal = 0;
+      let myThirdNumber = 1;
+      while (myThirdNumber <= 100) {
+        mySumTotal += myThirdNumber;
+        myThirdNumber++;
+      }
+      console.log(`Sum total ${sumTotal}`);
+
+      // do while
+      let myFourthNumber = 5;
+      do {
+        document.write(`<br> Hello ${myFourthNumber}`);
+        myFourthNumber--;
+      } while (myFourthNumber > 0);
+
+      // do while checking ODD or EVEN
+      do {
+        let input = parseInt(prompt("Enter a number!"));
+        if (input % 2 === 1) {
+          alert("ODD");
+        } else {
+          alert("EVEN");
+        }
+      } while (confirm("Wanna try agian!"));
+*/
+      let myCart = [];
+      let item1 = {
+        id: 1,
+        name: "Coffee",
+        price: 2300,
+        quantity: 3,
+      };
+      let item2 = {
+        id: 2,
+        name: "Teamix",
+        price: 2000,
+        quantity: 2,
+      };
+      let item3 = {
+        id: 3,
+        name: "Cake",
+        price: 1300,
+        quantity: 5,
+      };
+      myCart = [item1, item2, item3];
+      console.log(myCart);
+      let html = "";
+      let no = 1;
+      let itemTotal = 0;
+      myCart.forEach(function (v, i) {
+        // console.log(v);
+        let name = v.name;
+        let price = v.price;
+        let quantity = v.quantity;
+        let subtotal = price * quantity;
+        itemTotal += subtotal;
+        html += `<tr>
+            <td>${no++}</td>
+            <td>${name}</td>
+            <td>${price}</td>
+            <td>${quantity}</td>
+            <td>${subtotal}</td>
+          </tr>`;
+      });
+      html += `<tr>
+        <td colspan = '4'>Total</td>
+        <td> ${itemTotal} </td>
+        </tr>`;
+      document.getElementById("cartBody").innerHTML = html;
+    </script>
+  </body>
+</html>

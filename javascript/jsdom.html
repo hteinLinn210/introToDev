@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+    <style>
+      .blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="blue">JS DOM</h3>
+    <p>This is first Paragraph</p>
+    <p class="blue">This is seocond Paragraph</p>
+    <div id="myDiv"></div>
+    <h1 class="blue"></h1>
+    <button id="onClick">Click Me</button>
+
+    <form action="">
+      name: <input type="text" name="name" id="" /> <br />
+      email:
+      <input type="email" name="email" id="" /> <br />
+      <input type="submit" value="Register" />
+    </form>
+
+    <script>
+      let myBtn = document.getElementById("onClick");
+      myBtn.onclick = show;
+      function show() {
+        let myPtags = document.getElementsByTagName("p");
+        console.log(myPtags[1].innerHTML);
+        document.getElementById("myDiv").innerHTML = myPtags[1].innerHTML;
+
+        let myBlue = document.getElementsByClassName("blue");
+        console.log(myBlue[0].innerHTML);
+
+        myBlue[2].innerHTML = myBlue[0].innerHTML + myPtags[0].innerHTML;
+
+        let myEmail = document.getElementsByName("email");
+        console.log(myEmail);
+        myEmail[0].value = "eriklinn.gm102@gmail.com";
+
+        let myName = document.getElementsByName("name");
+        myName[0].value = "Erik";
+      }
+    </script>
+  </body>
+</html>

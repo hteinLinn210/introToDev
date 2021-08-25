@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Condition</title>
+  </head>
+  <body>
+    <h3>JS Condition</h3>
+    <script>
+      // if statement
+      /*
+       it() {
+
+       }
+       */
+      let number = 3;
+      if (number > 4) {
+        console.log("Number is greater than 4");
+      }
+
+      //   if...else statement
+      let secondNumber = 30;
+      if (secondNumber < 6) {
+        console.log("less than");
+      } else {
+        console.log("greater than");
+      }
+
+      //   if else if else
+      let thirdNumber = 0;
+      if (thirdNumber > 0) {
+        console.log("Positive Number");
+      } else if (thirdNumber < 0) {
+        console.log("Negative Number");
+      } else {
+        console.log("Zero");
+      }
+
+      //   Even of Odd
+      let myNum = parseInt(prompt("Enter a number!"));
+      if (myNum % 2 === 1) {
+        console.log(`${myNum} is ODD`);
+      } else {
+        console.log(`${myNum} is EVEN`);
+      }
+
+      // ask 2 numbers and comparison
+      let firstNum = parseInt(prompt("Enter first Number!"));
+      let secondNum = parseInt(prompt("Enter second Number!"));
+      let result;
+      if (firstNum > secondNum) {
+        result = `${firstNum} is greater than ${secondNum}`;
+      } else if (firstNum < secondNum) {
+        result = `${firstNum} is less than ${secondNum}`;
+      } else {
+        result = `${firstNum} is equal than ${secondNum}`;
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>

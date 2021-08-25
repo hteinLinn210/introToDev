@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Tree</title>
+  </head>
+  <body>
+    <h3>JS DOM Tree</h3>
+    <div id="myDiv">
+      <input type="text" name="userName" id="userName" value="Htein Linn" />
+      <div>
+        <span>This is span text</span>
+      </div>
+    </div>
+
+    <script>
+      let myDiv = document.getElementById("myDiv");
+      console.log(myDiv.childNodes[3].childNodes[1].innerHTML);
+      myDiv.childNodes[3].childNodes[1].innerHTML = "My Next span text";
+      console.log(myDiv.firstChild.nextSibling.value);
+    </script>
+  </body>
+</html>

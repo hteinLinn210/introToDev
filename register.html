@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <h3>Regirstration Form</h3>
+    <form action="register.php" method="POST" enctype="multipart/form-data">
+      <!-- personal Info -->
+      <fieldset>
+        <legend>Personal Info</legend>
+        <input type="hidden" value="45" name="id" />
+        <label for="name">User Name</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="User Name"
+          minlength="5"
+          maxlength="20"
+          value="Htein"
+          readonly
+        />
+        <br />
+        <label for="address">Address</label> <br />
+        <textarea name="address" id="" cols="30" rows="3"></textarea> <br />
+      </fieldset>
+
+      <!-- Interests -->
+      <label for="interest">Interests</label> <br />
+      <label for="php">PHP</label>
+      <input type="checkbox" name="interest" id="php" value="php" />
+      <label for="html">HTML</label>
+      <input type="checkbox" name="interest" id="html" value="html" />
+      <label for="js">JS</label>
+      <input type="checkbox" name="interest" id="js" value="js" checked />
+      <br />
+
+      <!-- Martial Status -->
+      <label for="">Martial Status</label> <br />
+      <label for="single">Single</label>
+      <input type="radio" name="mstatus" id="single" value="single" />
+      <label for="married">Married</label>
+      <input type="radio" name="mstatus" id="married" value="married" checked />
+      <label for="divorced">Divorced</label>
+      <input type="radio" name="mstatus" id="divorced" value="divorced" />
+      <br />
+
+      <!-- Education -->
+      <label for="education">Education Level</label> <br />
+      <select name="education" id="" multiple>
+        <option value="1">Diploma</option>
+        <option value="2" selected>Degree</option>
+        <option value="3">Master Degree</option>
+      </select>
+      <br />
+
+      <!-- Age, Height, Salary -->
+      <label for="age">Age</label> <br />
+      <input type="number" name="age" id="age" min="16" max="60" required />
+      <br />
+      <label for="height">Height</label> <br />
+      <input
+        type="number"
+        name="height"
+        id="height"
+        step="0.1"
+        min="4.5"
+        max="6.7"
+      />
+      <br />
+
+      <label for="salary">Salary Range</label> <br />
+      0<input
+        type="range"
+        name="salary"
+        id="salary"
+        min="0"
+        max="10"
+        step="0.1"
+      />10 <br />
+
+      <!-- Photo, DOB -->
+      <label for="photo">Upload Photo</label> <br />
+      <input type="file" name="photo" id="photo" /> <br />
+      <label for="dob">Date Of Birth</label> <br />
+      <input type="date" name="dob" id="dob" /> <br />
+
+      <!-- Button -->
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>
