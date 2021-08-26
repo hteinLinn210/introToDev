@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 @font-face {
@@ -67,4 +68,76 @@
   background-color: black;
   color: white;
   border: 1px solid gold;
+}
+
+/* Grid */
+
+.grid_body {
+  display: grid;
+  grid-template-columns: 750px auto auto;
+  background-color: #212326;
+  color: white;
+  gap: 5px;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px;
+}
+
+.grid_one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-align: left;
+  padding: 60px;
+}
+
+.grid_body div {
+  background-color: black;
+}
+
+.perfect {
+  color: gold;
+}
+
+.btnmore {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.grid_other {
+  padding: 20px 5px;
+}
+
+.grid_body2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 30px;
+}
+
+.photo1 {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+.content {
+  margin-top: 100px;
+  margin-right: 120px;
+  text-align: justify;
+}
+
+.grid_body3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: black;
+  color: white;
+}
+
+.content3 {
+  text-align: justify;
+  padding: 70px 100px 50px 120px;
 }
